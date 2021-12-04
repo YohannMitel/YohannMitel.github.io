@@ -1,0 +1,171 @@
+body{
+  background-color: #A2E09B;
+}
+header{
+  display: flex; /*La propriété flex est une propriété raccourcie qui définit la capacité d'un élément flexible à modifier ses dimensions afin de remplir l'espace disponible*/
+  align-items: flex-end;
+  border-bottom: 1px solid black;
+  justify-content: space-between;
+}
+h1{
+  font-family: serif;
+}
+.photo img{
+  width: 100px;
+  height: 130px;
+  border-radius: 90%;
+}
+.photo {
+  margin-top: 0px;
+  display: flex;
+  align-items: flex-end;
+}
+header  h2{
+  margin-top: 0px;
+  font-style: italic;
+}
+ header nav ul li{
+  list-style-type: none;
+  display: inline-block;
+  padding: 10px;
+}
+header nav li.btn a{
+   background-color:  #657a54;
+   padding: 10px;
+   text-decoration: none;
+   color: blue;
+  font-size: 20px;
+   color: white ;
+ }
+  header nav li.btn:hover a{
+    padding : 10px;
+    text-decoration: none;
+    color: white;
+    transition: 1s all;
+    background-color: #A2E09B;
+
+  }
+        /*Bannière*/
+.banniere{
+  margin-top: 15px;
+  height: 450px;
+  width: 100%;
+  border-radius: 5px;
+  background: url('img/iut-ConvertImage.jpg') center no-repeat;
+  position: relative; /* relative : l'élément est considéré comme positionné, le positionnement se fera par rapport à l'endroit où il est positionné dans le flux (où l'élément a été déclaré dans le code HTML)*/
+  box-shadow: 0px 4px 4px black;
+  margin-bottom: 25px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.banniere_descr{
+  position: absolute; /*Un élément positionné avec position: absolute va être positionné par rapport à son parent le plus proche positionné (avec une valeur de position différente de static )*/
+  bottom: 0px;
+  border-radius: 0px 0px 5px 5px;
+  width: 100%;
+  height: 30px;
+  padding-top: 15px;
+  padding-left: 4px;
+  background-color: rgba(164, 204, 131, 0.8);
+  color: white;
+}
+a.btn_bleu{
+  height: 25px;
+  position: absolute; /* Un élément positionné avec position: absolute va être positionné par rapport à son parent le plus proche positionné (avec une valeur de position différente de static )*/
+  right: 30px;
+  bottom: 10px;
+  background: url('img/fond_vert.jpg') repeat-x; /* Met une image en fond*/
+  border: 1px solid #C0FF89;
+  border-radius: 5px;
+  font-size: 1.2em;
+  text-align: center;
+  padding: 3px 8px 0px 8px;
+  text-decoration: none;
+  color: white;
+
+
+}
+.btn_bleu{
+  border: 0;
+}
+section{
+  display: flex; /*La propriété flex est une propriété raccourcie qui définit la capacité d'un élément flexible à modifier ses dimensions afin de remplir l'espace disponible*/
+  margin-bottom: 20px;
+}
+article{
+  flex: 3;
+  border: 3px solid black;
+  border-radius: 0px 7px 7px 7px;
+  background-color: white;
+}
+.titre_article{
+  display:flex; /*La propriété flex est une propriété raccourcie qui définit la capacité d'un élément flexible à modifier ses dimensions afin de remplir l'espace disponible*/
+}
+article img{
+  width: 80px;
+  height: 50px;
+}
+article p{
+  padding: 10px;
+  font-size: 120%;
+}
+.titre_article h2{
+  text-decoration: underline; 
+}
+aside{
+  flex: 1.5;
+  position: relative; /*relative : l'élément est considéré comme positionné, le positionnement se fera par rapport à l'endroit où il est positionné dans le flux (où l'élément a été déclaré dans le code HTML)*/
+  background-color: rgba( 164, 204, 131, 0.8);
+  box-shadow:0px 2px 5px #1C1A19;
+  padding: 20px;
+  color: white;
+  font-size: 0.9em;
+  text-align: center;
+}
+aside .block_aside{
+  margin-top: 35%;
+}
+aside .img_principal img{
+  width: 100%;
+  height: 100%;
+  padding-bottom: 50%;
+  vertical-align: middle; /* Aligne l'image au milieu du block */
+}
+.titre_souspart{
+  text-align: center;
+  text-decoration: underline;
+  color: #114B7D;
+}
+.resaux{
+  display: flex; /* La propriété flex est une propriété raccourcie qui définit la capacité d'un élément flexible à modifier ses dimensions afin de remplir l'espace disponible*/
+  flex: auto;
+}
+.reseaux img{
+  height: 20%;
+  width: 20%;
+  padding: 5%;
+  
+}
+footer{
+  border:1px solid #80E872;
+  border-radius: 0px 7px 7px 7px;
+  box-shadow: 1px 1px 1px 1px black;
+}
+
+.titre_footer{
+  text-decoration: underline;
+  text-align: center;
+}
+
+.footercontent a{
+  padding-left: 10px;
+  vertical-align: middle; /*Aligne l'image au milieu du block*/
+}
+.footercontent img{
+  width: 100px;
+  height: 100px;
+  border-radius: 80%;
+  display: block; 
+  margin-left: auto; /*Me permet de centrer l'image*/
+  margin-right: auto;
+}

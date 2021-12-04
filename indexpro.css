@@ -1,0 +1,47 @@
+h1{
+    border-bottom: 1px solid black;
+    text-align: center;
+    background: url('img/hack.jpeg') ; /* Image de fond */
+    color: antiquewhite;
+}
+body{
+    background-color: #c4bcb4;
+}
+.description{
+	display: flex; /* La propriété flex est une propriété raccourcie qui définit la capacité d'un élément flexible à modifier ses dimensions afin de remplir l'espace disponible*/
+}
+
+.acceuil{
+	background-color: #004912;
+	padding: 10px;
+	width: 140px;
+	border-right: 1px solid black;
+}
+
+.acceuil a{
+	font-size: 20px;
+	text-decoration: none;
+	color: white;
+}
+
+.acceuil:hover {
+	background-color: #58B6F0;
+}
+section{
+    border: 3px solid black;
+    margin-left: auto; /* Permet de centrer l'image */
+    margin-right: auto; /* Permet de centrer l'image */
+    width: 1400px;
+    border-radius: 0px 7px 7px 7px;
+    background-color: white;
+    font-size: 22px;
+    margin-top: 10px;
+}
+section p{
+    padding: 10px;
+}
+.descriptioncontent p{
+    padding-left: 20px;
+
+}
+
